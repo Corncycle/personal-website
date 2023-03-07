@@ -1,0 +1,21 @@
+{
+    "short_name": "Caleb Stromberg",
+    "name": "Caleb Stromberg",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "256x256",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "favicon.png",
+        "sizes": "256x256",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }

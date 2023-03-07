@@ -1,5 +1,9 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
+
+// When editing, remember to edit webpack.config.js as well if desired changes
+// should be present in development
 
 module.exports = {
   entry: './src/index.js',
@@ -24,8 +28,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Example Title',
-      template: './src/index.html',
+      title: 'Caleb Stromberg',
+      template: './static/index.html',
     }),
   ],
   resolve: {
