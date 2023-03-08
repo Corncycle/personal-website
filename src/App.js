@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
+import BottomBar from './components/BottomBar'
 import NavBar from './components/NavBar'
 import Contact from './pages/Contact'
 import Home from './pages/Home'
@@ -32,6 +33,8 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <hr className="horizontal-break" />
+      <BottomBar />
     </div>
   )
 }

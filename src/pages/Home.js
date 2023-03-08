@@ -4,10 +4,8 @@ export default function Home() {
   return (
     <div className="body--container">
       <div className="main-content--container">
-        <h1 className="main-content--header">
-          You are currently viewing the home page.
-        </h1>
-        Here is some more content for testing purposes.
+        <h1 className="main-content--header">Home</h1>
+        <p>This page is under construction.</p>
       </div>
     </div>
   )

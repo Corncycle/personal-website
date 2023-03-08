@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function NavBar({ pages, currPage }) {
   return (
     <div className="nav-bar--container flex align-center">
-      <span className="nav-bar--header">
+      <span className="nav-bar--header flex center">
         <Link to="/" className="nav-bar--header--link">
           Caleb
         </Link>
