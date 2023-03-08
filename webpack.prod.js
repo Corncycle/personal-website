@@ -30,6 +30,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Caleb Stromberg',
       template: './src/index.html',
+      favicon: './static/favicon.ico',
     }),
     new CopyPlugin({
       patterns: [

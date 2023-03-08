@@ -1,19 +1,36 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
+import NavBar from './components/NavBar'
+import Contact from './pages/Contact'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
 
 export default function App() {
+  const pages = {
+    home: '/',
+    projects: '/projects',
+    contact: '/contact',
+  }
+
+  const [currPage, setCurrPage] = useState('home')
+
+  const currLocation = useLocation()
+
+  useEffect(() => {
+    for (const page in pages) {
+      if (pages[page] === currLocation.pathname) {
+        setCurrPage(page)
+      }
+    }
+  }, [currLocation])
+
   return (
-    <div>
-      <div>{"Welcome to Caleb's website!"}</div>
+    <div className="main--container flex-col">
+      <NavBar pages={pages} currPage={currPage} />
       <Routes>
-        <Route
-          path="/"
-          element={<div>{'You are currently on the main page'}</div>}
-        />
-        <Route
-          path="/about"
-          element={<div>{'You are currently on the about page'}</div>}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   )
