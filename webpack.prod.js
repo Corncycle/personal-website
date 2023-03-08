@@ -29,7 +29,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Caleb Stromberg',
-      template: './static/index.html',
+      template: './src/index.html',
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: 'static',
+        },
+      ],
     }),
   ],
   resolve: {

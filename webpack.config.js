@@ -11,6 +11,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     static: './dist',
+    historyApiFallback: true,
   },
   output: {
     filename: '[name].bundle.js',
@@ -34,7 +35,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Caleb Stromberg',
       template: './src/index.html',
-      // manifest: './src/manifest.json',
     }),
     new CopyPlugin({
       patterns: [
