@@ -14,7 +14,9 @@
     --navbar-item-count: 2;
     --light-grey: #e2e8f0;
     
-    --project-cards-gap: 20px;
+    --project-cards-gap: 40px;
+    --project-card-border-radius: 12px;
+    --project-card-strip-size: 14px;
 }
 
 .flex {
@@ -170,10 +172,23 @@
 }
 
 .project-card--container {
-    flex: 0 0 calc(50% - calc(var(--project-cards-gap) / 2));
+    position: relative;
+    flex: 0 0 calc(calc(50% - var(--project-card-strip-size)) - calc(var(--project-cards-gap) / 2));
     align-items: stretch;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0 var(--project-card-border-radius) var(--project-card-border-radius) 0;
+    margin-left: var(--project-card-strip-size);
+}
+
+.project-card--container::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: var(--project-card-strip-size);
+    left: calc(-1 * var(--project-card-strip-size));
+    background-color: orangered;
+    border-radius: var(--project-card-border-radius) 0 0 var(--project-card-border-radius);
+
 }
 
 .project-card--text-container {
@@ -186,11 +201,12 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 0 var(--project-card-border-radius) 0 0;
 }
 
 .project-card--image {
-    border-radius: 8px 8px 0 0;
+    border-radius: 0 var(--project-card-border-radius) 0 0;
     display: block;
     object-fit: cover;
     object-position: top;
@@ -287,16 +303,18 @@
 }
 
 @media only screen and (max-width: 650px) {
+    .body--container {
+        padding: 10px 20px;
+    }
+
     .projects-array--container {
         align-items: flex-start;
         justify-content: flex-start;
     }
 
     .project-card--container {
-        min-width: 200px;
-        flex: 0 0 100%;
+        min-width: 250px;
+        flex: 0 0 calc(100% - var(--project-card-strip-size));
         align-items: stretch;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-        border-radius: 8px;
     }
 }
