@@ -15,8 +15,8 @@
     --light-grey: #e2e8f0;
     
     --project-cards-gap: 40px;
-    --project-card-border-radius: 12px;
-    --project-card-strip-size: 14px;
+    --project-card-border-radius: 10px;
+    --project-card-strip-size: 10px;
 }
 
 .flex {
@@ -43,6 +43,36 @@
 
 .minimal {
     display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.spacer-20px {
+    min-height: 20px;
+}
+
+.inline-icon {
+    transform: translateY(2px);
+    height: 1rem;
+}
+
+.gray-icon {
+    filter: invert(55%) sepia(2%) saturate(15%) hue-rotate(327deg) brightness(91%) contrast(86%);
+}
+
+.orangered-text {
+    color: orangered;
+    font-weight: bold;
+}
+
+.gray-text {
+    color: gray;
+}
+
+.dimgray-text {
+    color: dimgray;
 }
 
 .horizontal-break {
@@ -138,14 +168,32 @@
 }
 
 .main-content--header {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.main-content--container p {
-    font-size: 1rem;
-    line-height: 1.5;
+.main-content--header.no-margin {
+    margin-bottom: 0;
+}
+
+.main-content--container .p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.break-after {
+    margin-bottom: 1.5rem;
+}
+
+.main-content--unique-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.main-content--note {
+    font-size: 0.8rem;
 }
 
 .bottom-wrapper {
