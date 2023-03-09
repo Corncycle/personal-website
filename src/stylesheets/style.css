@@ -10,6 +10,8 @@
 
     --navbar-item-count: 2;
     --light-grey: #e2e8f0;
+    
+    --project-cards-gap: 20px;
 }
 
 .flex {
@@ -131,12 +133,14 @@
 }
 
 .main-content--header {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .main-content--container p {
     font-size: 1rem;
+    line-height: 1.5;
 }
 
 .bottom-wrapper {
@@ -154,6 +158,68 @@
 
 .link-widget--link:hover .link-widget--image {
     filter: brightness(0) invert(40%) sepia(62%) saturate(5659%) hue-rotate(1deg) brightness(101%) contrast(106%);
+}
+
+.projects-array--container {
+    gap: var(--project-cards-gap);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card--container {
+    flex: 0 0 calc(50% - calc(var(--project-cards-gap) / 2));
+    align-items: stretch;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.project-card--text-container {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 16px;
+}
+
+.project-card--image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card--image {
+    border-radius: 8px 8px 0 0;
+    display: block;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.project-card--name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.project-card--links-container {
+    align-items: flex-start;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.project-card--link {
+    width: initial;
+    text-decoration: none;
+    color: orangered;
+    font-weight: bold;
+}
+
+.project-card--link:hover {
+    color: orange;
+}
+
+.project-card--link:active {
+    color: gold;
 }
 
 @keyframes border-glow {
@@ -214,5 +280,20 @@
     .nav-bar--items--container.nav-collapsed {
         max-height: 0;
         transition: 0.6s max-height;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .projects-array--container {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .project-card--container {
+        min-width: 200px;
+        flex: 0 0 100%;
+        align-items: stretch;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
     }
 }
