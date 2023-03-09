@@ -8,6 +8,7 @@
 :root {
     font-family: "Roboto", sans-serif;
 
+    --navbar-item-count: 2;
     --light-grey: #e2e8f0;
 }
 
@@ -33,6 +34,10 @@
     align-items: center;
 }
 
+.minimal {
+    display: none;
+}
+
 .horizontal-break {
     border: none;
     border-top: 1px solid lightgray;
@@ -52,11 +57,12 @@
     padding: 10px;
     justify-content: space-between;
     gap: 1.5rem;
+    align-items: center;
 }
 
 .nav-bar--header {
     font-size: 1.5rem;
-    font-family: "Roboto", serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     padding: 4px 12px;
     border-radius: 8px;
@@ -72,6 +78,26 @@
 
 .nav-bar--header--link:hover {
     animation: 1s ease-in-out infinite border-glow, 1s ease-in-out infinite color-glow;
+}
+
+.nav-bar--button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
+    padding: 0 12px;
+}
+
+.nav-bar--button:not(.nav-collapsed) .nav-bar--button--image {
+    filter: invert(40%) sepia(62%) saturate(5659%) hue-rotate(1deg) brightness(101%) contrast(106%);
+}
+
+.nav-bar--button--image {
+    height: 2rem;
 }
 
 .nav-bar--items--item {
@@ -109,6 +135,10 @@
 
 .main-content--container p {
     font-size: 1rem;
+}
+
+.bottom-wrapper {
+    gap: 10px;
 }
 
 .bottom-bar--container {
@@ -149,5 +179,38 @@
 
     100% {
         color: orangered;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .minimal {
+        display: initial;
+    }
+
+    .main--container {
+        gap: 0;
+    }
+
+    .nav-bar--container {
+        gap: 6px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar--top-level {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-bar--items--container {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: calc(var(--navbar-item-count) * 2rem);
+        transition: 0.6s max-height;
+    }
+
+    .nav-bar--items--container.nav-collapsed {
+        max-height: 0;
+        transition: 0.6s max-height;
     }
 }

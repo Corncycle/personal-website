@@ -14,6 +14,7 @@ export default function App() {
   }
 
   const [currPage, setCurrPage] = useState('home')
+  const [navCollapsed, setNavCollapsed] = useState(true)
 
   const currLocation = useLocation()
 
@@ -27,14 +28,21 @@ export default function App() {
 
   return (
     <div className="main--container flex-col">
-      <NavBar pages={pages} currPage={currPage} />
+      <NavBar
+        pages={pages}
+        currPage={currPage}
+        navCollapsed={navCollapsed}
+        setNavCollapsed={setNavCollapsed}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <hr className="horizontal-break" />
-      <BottomBar />
+      <div className="bottom-wrapper flex-col">
+        <hr className="horizontal-break" />
+        <BottomBar />
+      </div>
     </div>
   )
 }
