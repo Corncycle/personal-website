@@ -42,16 +42,17 @@ export default function NavBar({
       >
         {Object.entries(pages).map(([name, route], i) => {
           return (
-            <Link key={i} to={route} className="nav-bar--items--link">
-              <li
-                className={
-                  'nav-bar--items--item' +
-                  (name === currPage ? ' active-page' : '')
-                }
-              >
+            <li
+              key={i}
+              className={
+                'nav-bar--items--item' +
+                (name === currPage ? ' active-page' : '')
+              }
+            >
+              <Link to={route} className="nav-bar--items--link">
                 {name}
-              </li>
-            </Link>
+              </Link>
+            </li>
           )
         })}
       </ul>

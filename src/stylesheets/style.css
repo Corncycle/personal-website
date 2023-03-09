@@ -101,7 +101,6 @@
 }
 
 .nav-bar--items--item {
-    padding: 8px 12px 6px 12px;
     border-radius: 10px;
 }
 
@@ -111,13 +110,16 @@
     font-size: 0.9rem;
     font-weight: 300;
     color: black;
+
+    padding: 8px 12px 6px 12px;
+    display: block;
 }
 
 .nav-bar--items--item:hover {
     background-color: var(--light-grey);
 }
 
-.active-page {
+.active-page .nav-bar--items--link {
     font-weight: 500;
     color: orangered;
 }
