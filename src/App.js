@@ -11,6 +11,7 @@ export default function App() {
     home: '/',
     projects: '/projects',
     contact: '/contact',
+    resume: '/error',
   }
 
   const [currPage, setCurrPage] = useState('home')

@@ -27,7 +27,7 @@ export default function Home() {
         </p>
         <p className="p break-after">
           {
-            "Since graduating, I've been self-studying how to build websites. Accordingly, I've been writing primarily Javascript recently, but I tend to lean towards Python for smaller personal projects if I can."
+            "Since graduating, I've been self-studying how to build websites. My focus so far has been on the front-end but, now that I've finished this website, I plan to learn much more about the back-end. Accordingly, I've been writing primarily Javascript recently, but I tend to lean toward Python for smaller personal projects when I can."
           }
         </p>
         <p className="p break-after">

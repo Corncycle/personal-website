@@ -41,7 +41,7 @@ export default function NavBar({
         }
       >
         {Object.entries(pages).map(([name, route], i) => {
-          return (
+          return name !== 'resume' ? (
             <li
               key={i}
               className={
@@ -52,6 +52,21 @@ export default function NavBar({
               <Link to={route} className="nav-bar--items--link">
                 {name}
               </Link>
+            </li>
+          ) : (
+            <li
+              key={i}
+              className={
+                'nav-bar--items--item' +
+                (name === currPage ? ' active-page' : '')
+              }
+            >
+              <a
+                href="/caleb-stromberg-resume.pdf"
+                className="nav-bar--items--link"
+              >
+                {name}
+              </a>
             </li>
           )
         })}
