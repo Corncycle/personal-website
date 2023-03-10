@@ -49,6 +49,10 @@
     font-weight: bold;
 }
 
+.monospace {
+    font-family: monospace;
+}
+
 .spacer-20px {
     min-height: 20px;
 }
@@ -56,6 +60,7 @@
 .inline-icon {
     transform: translateY(2px);
     height: 1rem;
+    user-select: none;
 }
 
 .gray-icon {
@@ -266,6 +271,7 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .project-card--links-container {
@@ -275,7 +281,6 @@
 }
 
 .project-card--link {
-    width: initial;
     text-decoration: none;
     color: orangered;
     font-weight: bold;

@@ -32,7 +32,7 @@ export default function Home() {
         </p>
         <p className="p break-after">
           {
-            'Some of my recreational interests include cooking, reading ancient Greek retellings, and competitive Smash Bros.'
+            "When I'm not programming, I'm probably cooking, reading ancient Greek retellings, or playing competitive Smash Bros."
           }
         </p>
         <h1 className="main-content--header no-margin">Technologies</h1>
@@ -42,8 +42,8 @@ export default function Home() {
         </div>
         <div className="main-content--note">
           {' '}
-          Technologies I have previously worked with but haven&apos;t used in a
-          while are in <strong className="gray-text">gray</strong>.
+          Technologies I have used previously but not for a considerable amount
+          of time are in <strong className="gray-text">gray</strong>.
         </div>
         <div className="spacer-20px" />
         <p className="p">

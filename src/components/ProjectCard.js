@@ -8,14 +8,26 @@ export default function ProjectCard({ project }) {
       </div>
       <div className="project-card--text-container flex-col">
         <h3 className="project-card--name">{project.name}</h3>
-        <p className="project-card--description">{project.description}</p>
+        <p
+          className="project-card--description"
+          dangerouslySetInnerHTML={{ __html: project.description }}
+        ></p>
         <div className="project-card--links-container flex-col">
-          <a className="project-card--link" href={project.demoLink}>
-            Live Demo
-          </a>
-          <a className="project-card--link" href={project.sourceLink}>
-            Source
-          </a>
+          {project.demoLink ? (
+            <a className="project-card--link" href={project.demoLink}>
+              Live Demo
+            </a>
+          ) : null}
+          {project.sourceLink ? (
+            <a className="project-card--link" href={project.sourceLink}>
+              Source
+            </a>
+          ) : null}
+          {project.theoremSheetLink ? (
+            <a className="project-card--link" href={project.theoremSheetLink}>
+              Theorem Sheet
+            </a>
+          ) : null}
         </div>
       </div>
     </div>
