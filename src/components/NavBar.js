@@ -31,7 +31,11 @@ export default function NavBar({
             setNavCollapsed(!navCollapsed)
           }}
         >
-          <img className="nav-bar--button--image" src={menuButtonImg} />
+          <img
+            className="nav-bar--button--image"
+            src={menuButtonImg}
+            alt="Collapsible navigation button"
+          />
         </button>
       </div>
       <ul

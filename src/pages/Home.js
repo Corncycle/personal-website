@@ -55,7 +55,11 @@ export default function Home() {
           <span className="gray-text">
             Java <GrayIcon Icon={FaJava} />, Mathematica{' '}
             <GrayIcon Icon={SiWolframmathematica} />, LaTeX{' '}
-            <img className="inline-icon gray-icon" src={LaTeXIcon} />
+            <img
+              className="inline-icon gray-icon"
+              src={LaTeXIcon}
+              alt="LaTeX icon"
+            />
           </span>
         </p>
         <p className="p">
