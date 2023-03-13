@@ -17,7 +17,7 @@ const projectData = [
     img: personalWebsiteImg,
     name: 'Personal Website',
     description:
-      'The site you are currently on! This site was made in React, with client-side routing from React Router. It has a responsive design and a collapsible nav bar for mobile.',
+      'The site you are currently on! This site was made in React and packaged with webpack, with client-side routing from React Router. It has a responsive design and a collapsible nav bar for mobile.',
     demoLink: 'https://www.calebstromberg.com/',
     sourceLink: 'https://github.com/Corncycle/personal-website',
   },

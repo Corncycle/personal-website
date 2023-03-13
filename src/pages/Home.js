@@ -22,7 +22,7 @@ export default function Home() {
         </p>
         <p className="p break-after">
           {
-            "I'm a recent graduate with a MS Mathematics, based in western Washington, who is interested in breaking into the software industry. Although my degree is in mathematics, I took various computer science courses throughout my education and have been continually interested in programming since I was first introduced to it."
+            "I'm a recent graduate with a MS Mathematics, based in western Washington, who is interested in breaking into the software industry. Although my degree is in mathematics, I took various computer science courses throughout my education and have been continually interested in programming since I was introduced to it."
           }
         </p>
         <p className="p break-after">
