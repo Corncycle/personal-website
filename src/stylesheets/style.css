@@ -231,6 +231,12 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 0 var(--project-card-border-radius) var(--project-card-border-radius) 0;
     margin-left: var(--project-card-strip-size);
+    transition: 0.25s box-shadow;
+}
+
+.project-card--container:hover {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+    transition: 0.25s box-shadow;
 }
 
 .project-card--container::before {
@@ -241,7 +247,12 @@
     left: calc(-1 * var(--project-card-strip-size));
     background-color: orangered;
     border-radius: var(--project-card-border-radius) 0 0 var(--project-card-border-radius);
+    transition: 0.25s background-color;
+}
 
+.project-card--container:hover::before {
+    background-color: orange;
+    transition: 0.25s background-color;
 }
 
 .project-card--text-container {
@@ -319,6 +330,20 @@
 
     100% {
         color: orangered;
+    }
+}
+
+@keyframes background-glow {
+    0% {
+        background-color: orangered;
+    }
+
+    50% {
+        background-color: orange;
+    }
+
+    100% {
+        background-color: orangered;
     }
 }
 
