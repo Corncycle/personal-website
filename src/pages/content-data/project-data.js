@@ -1,3 +1,4 @@
+import ultimateStageDataImg from '../../images/project-images/ultimate-stage-data.png'
 import findTheFighterImg from '../../images/project-images/find-the-fighter.png'
 import smashMemoryImg from '../../images/project-images/smash-memory.png'
 import personalWebsiteImg from '../../images/project-images/personal-website.png'
@@ -5,6 +6,14 @@ import coquestImage from '../../images/project-images/coquest.png'
 import theoremSheetImage from '../../images/project-images/theorem-sheet.png'
 
 const projectData = [
+  {
+    img: ultimateStageDataImg,
+    name: 'Ultimate Stage Data',
+    description:
+      'A web application serving stage-dependent statistics from Smash Ultimate tournaments. The server has processed over 1.5 million matches from <a class="project-card--link" href="https://developer.start.gg/docs/intro/">start.gg\'s API</a> for its database, and the dataset is updated weekly.',
+    demoLink: 'https://ultimatestagedata.com/',
+    sourceLink: 'https://github.com/Corncycle/ultimate-stage-data-server',
+  },
   {
     img: findTheFighterImg,
     name: 'Find The Fighter',
@@ -33,7 +42,7 @@ const projectData = [
     img: smashMemoryImg,
     name: 'Smash Memory',
     description:
-      'An in-browser game to test memory of previously selected Smash Bros. fighters. High scores are stored using the <span class="monospace">localStorage</span> API. Assets were scraped from smashbros.com using <span class="monospace">axios</span> in Node.js.',
+      'An in-browser game to test memory of previously selected Smash Bros fighters. High scores are stored using the <span class="monospace">localStorage</span> API. Assets were scraped from smashbros.com using <span class="monospace">axios</span> in Node.js.',
     demoLink: 'https://corncycle.github.io/memory-game/',
     sourceLink: 'https://github.com/Corncycle/memory-game',
   },
