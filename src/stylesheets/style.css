@@ -67,6 +67,10 @@
     filter: invert(55%) sepia(2%) saturate(15%) hue-rotate(327deg) brightness(91%) contrast(86%);
 }
 
+.orangered-icon {
+    filter: invert(32%) sepia(100%) saturate(3561%) hue-rotate(4deg) brightness(107%) contrast(103%);
+}
+
 .orangered-text {
     color: orangered;
     font-weight: bold;

@@ -1,10 +1,20 @@
 import React from 'react'
 import { BsGit, BsGithub } from 'react-icons/bs'
-import { FaHtml5, FaCss3Alt, FaJava, FaPython, FaReact } from 'react-icons/fa'
 import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJava,
+  FaPython,
+  FaReact,
+  FaNodeJs,
+} from 'react-icons/fa'
+import {
+  SiExpress,
   SiFirebase,
   SiJavascript,
   SiJest,
+  SiMongodb,
+  SiTailwindcss,
   SiWebpack,
   SiWolframmathematica,
 } from 'react-icons/si'
@@ -36,27 +46,16 @@ export default function Home() {
           }
         </p>
         <h1 className="main-content--header no-margin">Technologies</h1>
-        <div className="main-content--note">
-          Technologies I am currently comfortable with have{' '}
-          <strong className="orangered-text">orange</strong> icons.{' '}
-        </div>
-        <div className="main-content--note">
-          {' '}
-          Technologies I have used previously but not for a considerable amount
-          of time are in <strong className="gray-text">gray</strong>.
-        </div>
-        <div className="spacer-20px" />
         <p className="p">
           <strong className="bold">Languages: </strong> HTML{' '}
           <OrangeIcon Icon={FaHtml5} />
           , CSS <OrangeIcon Icon={FaCss3Alt} />, Javascript{' '}
-          <OrangeIcon Icon={SiJavascript} />, Python{' '}
-          <OrangeIcon Icon={FaPython} />,{' '}
-          <span className="gray-text">
-            Java <GrayIcon Icon={FaJava} />, Mathematica{' '}
-            <GrayIcon Icon={SiWolframmathematica} />, LaTeX{' '}
+          <OrangeIcon Icon={SiJavascript} />, Node.js{' '}
+          <OrangeIcon Icon={FaNodeJs} />, Python <OrangeIcon Icon={FaPython} />,{' '}
+          <span>
+            Java <OrangeIcon Icon={FaJava} />, LaTeX{' '}
             <img
-              className="inline-icon gray-icon"
+              className="inline-icon orangered-icon"
               src={LaTeXIcon}
               alt="LaTeX icon"
             />
@@ -64,8 +63,10 @@ export default function Home() {
         </p>
         <p className="p">
           <strong className="bold">Frameworks/Libraries:</strong> React.js{' '}
-          <OrangeIcon Icon={FaReact} />, Jest <OrangeIcon Icon={SiJest} />,
-          Firebase Firestore <OrangeIcon Icon={SiFirebase} />
+          <OrangeIcon Icon={FaReact} />, Express <OrangeIcon Icon={SiExpress} />
+          , MongoDB <OrangeIcon Icon={SiMongodb} />, TailwindCSS{' '}
+          <OrangeIcon Icon={SiTailwindcss} />
+          , Jest <OrangeIcon Icon={SiJest} />
         </p>
         <p className="p">
           <strong className="bold">Miscellaneous:</strong> Git{' '}
