@@ -10,7 +10,7 @@ const projectData = [
     img: ultimateStageDataImg,
     name: 'Ultimate Stage Data',
     description:
-      'A web application serving stage-dependent statistics from Smash Ultimate tournaments. The server has processed over 1.5 million matches from <a class="project-card--link" href="https://developer.start.gg/docs/intro/">start.gg\'s API</a> for its database, and the dataset is updated weekly.',
+      'A web application serving stage-dependent statistics from Smash Ultimate tournaments. The server has processed over 4 million matches from <a class="project-card--link" href="https://developer.start.gg/docs/intro/">start.gg\'s API</a> for its database, and the dataset is updated weekly.',
     demoLink: 'https://ultimatestagedata.com/',
     sourceLink: 'https://github.com/Corncycle/ultimate-stage-data-server',
   },
