@@ -31,19 +31,34 @@ export default function Home() {
           <span className="orangered-text">{' Caleb Stromberg'}</span>
         </p>
         <p className="p break-after">
-          {
-            "I'm a recent graduate with a MS Mathematics, based in western Washington, who is interested in breaking into the software industry. Although my degree is in mathematics, I took various computer science courses throughout my education and have been continually interested in programming since I was introduced to it."
-          }
+          I'm a software engineer with an MS Mathematics based in Western
+          Washington. I'm currently employed by{' '}
+          <a className="project-card--link" href="https://hyperproof.io/">
+            Hyperproof
+          </a>
+          , where I do integrations work in Typescript.
         </p>
         <p className="p break-after">
-          {
-            "Since graduating, I've been self-studying how to build websites. My focus so far has been on the front-end but, since finishing this website, I've been learning how to build full-stack applications. I've been writing primarily Javascript recently, but I tend to lean toward Python for smaller personal projects when I can, and almost all of the code I wrote in college was Java."
-          }
+          Although I got into the software industry in 2023 through web
+          development (and it's what I have the most experience with), I'm also
+          interested in graphics programming and game development. I've recently
+          been exploring and tinkering with{' '}
+          <a className="project-card--link" href="https://threejs.org/">
+            Three.js
+          </a>{' '}
+          and{' '}
+          <a
+            className="project-card--link"
+            href="https://pmndrs.github.io/cannon-es/"
+          >
+            cannon-es
+          </a>{' '}
+          in Typescript, but I plan to delve into lower level graphics
+          programming when I wrap up my current project.
         </p>
         <p className="p break-after">
-          {
-            "When I'm not programming, I'm probably cooking, reading ancient Greek retellings, or playing competitive Smash Bros."
-          }
+          When I'm not programming, I'm probably cooking, reading ancient Greek
+          retellings, or playing competitive Smash Bros.
         </p>
         <h1 className="main-content--header no-margin">Technologies</h1>
         <p className="p">
