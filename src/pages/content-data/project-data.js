@@ -1,6 +1,6 @@
 import ultimateStageDataImg from '../../images/project-images/ultimate-stage-data.png'
 import findTheFighterImg from '../../images/project-images/find-the-fighter.png'
-import smashMemoryImg from '../../images/project-images/smash-memory.png'
+import aMemoryAssessmentImg from '../../images/project-images/a-memory-assessment.png'
 import personalWebsiteImg from '../../images/project-images/personal-website.png'
 import coquestImage from '../../images/project-images/coquest.png'
 import theoremSheetImage from '../../images/project-images/theorem-sheet.png'
@@ -15,6 +15,14 @@ const projectData = [
     sourceLink: 'https://github.com/Corncycle/ultimate-stage-data-server',
   },
   {
+    img: aMemoryAssessmentImg,
+    name: 'A Memory Assessment',
+    description:
+      'My first foray into graphics programming. A 3d memory game built using Typescript bindings of the graphics library <a class="project-card--link" href="https://threejs.org/">three.js</a> and the physics library <a class="project-card--link" href="https://schteppe.github.io/cannon.js/">cannon.js</a>. Besides these libraries, game logic was built with no engine.',
+    demoLink: 'https://corncycle.com/a-memory-assessment/',
+    sourceLink: 'https://github.com/Corncycle/matcher',
+  },
+  {
     img: findTheFighterImg,
     name: 'Find The Fighter',
     description:
@@ -26,7 +34,7 @@ const projectData = [
     img: personalWebsiteImg,
     name: 'Personal Website',
     description:
-      'The site you are currently on! This site was made in React and packaged with webpack, with client-side routing from React Router. It has a responsive design and a collapsible nav bar for mobile.',
+      'The site you are currently on! This site was built with React and packaged with webpack, with client-side routing from React Router. It has a responsive design and a collapsible nav bar for mobile.',
     demoLink: 'https://www.calebstromberg.com/',
     sourceLink: 'https://github.com/Corncycle/personal-website',
   },
@@ -37,14 +45,6 @@ const projectData = [
       'Cohost is a social media platform that allows users to create posts with HTML markup and inline CSS. However, many tags and styles are forbidden, including <span class="monospace">input</span>. Have you ever wondered what can be created using only the tags <span class="monospace">div</span>, <a class="project-card--link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"><span class="monospace">summary</span> and <span class="monospace">details</span></a>, and inline CSS?',
     demoLink: 'https://cohost.org/Corncycle/post/362844-div-style-line-hei',
     sourceLink: 'https://github.com/Corncycle/chosts',
-  },
-  {
-    img: smashMemoryImg,
-    name: 'Smash Memory',
-    description:
-      'An in-browser game to test memory of previously selected Smash Bros fighters. High scores are stored using the <span class="monospace">localStorage</span> API. Assets were scraped from smashbros.com using <span class="monospace">axios</span> in Node.js.',
-    demoLink: 'https://corncycle.github.io/memory-game/',
-    sourceLink: 'https://github.com/Corncycle/memory-game',
   },
   {
     img: theoremSheetImage,

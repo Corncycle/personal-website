@@ -13,8 +13,12 @@ import {
   SiFirebase,
   SiJavascript,
   SiJest,
+  SiKibana,
   SiMongodb,
+  SiPostgresql,
   SiTailwindcss,
+  SiThreedotjs,
+  SiTypescript,
   SiWebpack,
   SiWolframmathematica,
 } from 'react-icons/si'
@@ -31,62 +35,46 @@ export default function Home() {
           <span className="orangered-text">{' Caleb Stromberg'}</span>
         </p>
         <p className="p break-after">
-          I'm a software engineer with an MS Mathematics based in Western
-          Washington. I'm currently employed by{' '}
-          <a className="project-card--link" href="https://hyperproof.io/">
-            Hyperproof
-          </a>
-          , where I do integrations work in Typescript.
+          I'm a full stack software developer with an MS Mathematics based in
+          Western Washington currently looking for work. At my most recent web
+          development job I primarily worked on a Java backend and React
+          frontend with Typescript.
         </p>
         <p className="p break-after">
-          Although I got into the software industry in 2023 through web
-          development (and it's what I have the most experience with), I'm also
-          interested in graphics programming and game development. I've recently
-          been exploring and tinkering with{' '}
+          Although my industry experience is in web development, I'm also
+          interested in graphics programming and game development. I've been
+          exploring graphics programming with{' '}
           <a className="project-card--link" href="https://threejs.org/">
-            Three.js
+            three.js
           </a>{' '}
-          and{' '}
-          <a
-            className="project-card--link"
-            href="https://pmndrs.github.io/cannon-es/"
-          >
-            cannon-es
-          </a>{' '}
-          in Typescript, but I plan to delve into lower level graphics
-          programming when I wrap up my current project.
+          and OpenGL, and am continuing learning more about the field on my own
+          as I look for jobs.
         </p>
         <p className="p break-after">
-          When I'm not programming, I'm probably cooking, reading ancient Greek
-          retellings, or playing competitive Smash Bros.
+          When I'm not programming, I'm probably playing competitive fighting
+          games or reading.
         </p>
-        <h1 className="main-content--header no-margin">Technologies</h1>
+        <h1 className="main-content--header">Technologies</h1>
         <p className="p">
-          <strong className="bold">Languages: </strong> HTML{' '}
-          <OrangeIcon Icon={FaHtml5} />
-          , CSS <OrangeIcon Icon={FaCss3Alt} />, Javascript{' '}
-          <OrangeIcon Icon={SiJavascript} />, Node.js{' '}
-          <OrangeIcon Icon={FaNodeJs} />, Python <OrangeIcon Icon={FaPython} />,{' '}
-          <span>
-            Java <OrangeIcon Icon={FaJava} />, LaTeX{' '}
-            <img
-              className="inline-icon orangered-icon"
-              src={LaTeXIcon}
-              alt="LaTeX icon"
-            />
-          </span>
+          <strong className="bold">Languages: </strong>
+          Typescript <OrangeIcon Icon={SiTypescript} />, Javascript{' '}
+          <OrangeIcon Icon={SiJavascript} />, Java <OrangeIcon Icon={FaJava} />,
+          PostgreSQL <OrangeIcon Icon={SiPostgresql} />, Python{' '}
+          <OrangeIcon Icon={FaPython} />, HTML <OrangeIcon Icon={FaHtml5} />,
+          CSS <OrangeIcon Icon={FaCss3Alt} />
         </p>
         <p className="p">
-          <strong className="bold">Frameworks/Libraries:</strong> React.js{' '}
-          <OrangeIcon Icon={FaReact} />, Express <OrangeIcon Icon={SiExpress} />
-          , MongoDB <OrangeIcon Icon={SiMongodb} />, TailwindCSS{' '}
+          <strong className="bold">Frameworks/Libraries: </strong>
+          React.js <OrangeIcon Icon={FaReact} />, Jest{' '}
+          <OrangeIcon Icon={SiJest} />, Express <OrangeIcon Icon={SiExpress} />,
+          three.js <OrangeIcon Icon={SiThreedotjs} />, Tailwind{' '}
           <OrangeIcon Icon={SiTailwindcss} />
-          , Jest <OrangeIcon Icon={SiJest} />
         </p>
         <p className="p">
-          <strong className="bold">Miscellaneous:</strong> Git{' '}
-          <OrangeIcon Icon={BsGit} />, Github <OrangeIcon Icon={BsGithub} />,
-          webpack <OrangeIcon Icon={SiWebpack} />
+          <strong className="bold">Miscellaneous: </strong>
+          Git <OrangeIcon Icon={BsGit} />, Github <OrangeIcon Icon={BsGithub} />
+          , webpack <OrangeIcon Icon={SiWebpack} />, Kibana{' '}
+          <OrangeIcon Icon={SiKibana} />
         </p>
       </div>
     </div>

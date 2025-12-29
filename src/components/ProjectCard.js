@@ -15,7 +15,7 @@ export default function ProjectCard({ project }) {
         <div className="project-card--links-container flex-col">
           {project.demoLink ? (
             <a className="project-card--link" href={project.demoLink}>
-              Live Demo
+              Live
             </a>
           ) : null}
           {project.sourceLink ? (
