@@ -42,7 +42,7 @@ const projectData = [
     img: coquestImage,
     name: 'Cohost Posts',
     description:
-      'Cohost is a social media platform that allows users to create posts with HTML markup and inline CSS. However, many tags and styles are forbidden, including <span class="monospace">input</span>. Have you ever wondered what can be created using only the tags <span class="monospace">div</span>, <a class="project-card--link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"><span class="monospace">summary</span> and <span class="monospace">details</span></a>, and inline CSS?',
+      'Cohost is a (now defunct) social media platform that allowed users to create posts with HTML markup and inline CSS. However, many tags and styles were forbidden, including <span class="monospace">input</span>. Have you ever wondered what can be created using only the tags <span class="monospace">div</span>, <a class="project-card--link" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"><span class="monospace">summary</span> and <span class="monospace">details</span></a>, and inline CSS?',
     demoLink: 'https://cohost.org/Corncycle/post/362844-div-style-line-hei',
     sourceLink: 'https://github.com/Corncycle/chosts',
   },
